@@ -4,5 +4,5 @@ pymongo
 uvicorn
 python-dotenv
 pillow
-libzbar0
 pyzbar
+pyzbar[scripts]
