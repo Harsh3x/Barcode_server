@@ -4,6 +4,7 @@
 apt-get update
 
 # Install zbar tools and library
+apt install libzbar0
 apt-get install -y zbar-tools libzbar0
 
 # Install additional system dependencies that pyzbar might require
