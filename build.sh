@@ -1,10 +1,8 @@
 #!/bin/bash
 
-# Update package lists
+# Update the package list and install required dependencies
 apt-get update
-
-# Install zbar dependencies
 apt-get install -y zbar-tools libzbar0
 
-# Install Python dependencies (use pip if you're not using poetry)
+# Install Python dependencies
 pip install -r requirements.txt
