@@ -9,8 +9,14 @@ from typing import List
 # CORS from fastapi
 from fastapi.middleware.cors import CORSMiddleware
 import os
+from dotenv import load_dotenv
 
 # Initialize FastAPI app
+
+# Load environment variables
+load_dotenv()
+
+
 app = FastAPI()
 
 # MongoDB configuration
