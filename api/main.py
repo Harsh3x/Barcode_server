@@ -8,12 +8,14 @@ from PIL import Image
 from typing import List
 # CORS from fastapi
 from fastapi.middleware.cors import CORSMiddleware
+import os
 
 # Initialize FastAPI app
 app = FastAPI()
 
 # MongoDB configuration
-client = MongoClient("mongodb+srv://Harsh:YA0iLsIzXx2ga89o@cluster0.hecr7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+MONGO_URI = os.getenv("MONGO_URI")
+client = MongoClient(MONGO_URI)
 db = client["Barcode_db"]  # Database name
 barcodes_collection = db["food_info"]  # Collection name
 
