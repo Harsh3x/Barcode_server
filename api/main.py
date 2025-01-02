@@ -14,6 +14,7 @@ import os
 app = FastAPI()
 
 # MongoDB configuration
+# MongoDB configuration
 MONGO_URI = os.getenv("MONGO_URI")
 client = MongoClient(MONGO_URI)
 db = client["Barcode_db"]  # Database name
