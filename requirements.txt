@@ -1,5 +1,6 @@
 fastapi
 uvicorn
 pymongo
-pyzbar
 pillow
+pyzbar
+python-multipart
